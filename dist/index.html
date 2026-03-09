@@ -8,8 +8,28 @@
 		<title>💬 ChatJS</title>
 	</head>
 	<body>
-		<main>
+		<main class="app">
 			<!-- TODO: Implement Me! -->
+
+			<header class="chat-header">
+				<h1>ChatJS</h1>
+				<button id="new-chat-btn" class="new-chat-btn" type="button">New Chat</button>
+			</header>
+
+			<section id="chat-area" class="chat-area">
+				<div class="message bot-message">Hi! I'm Echo. Send me a message and I'll echo it.</div>
+			</section>
+
+			<form id="chat-form" class="chat-input-area">
+				<input
+					id="message-input"
+					class="message-input"
+					type="text"
+					placeholder="Type your message here..."
+					maxlength="500"
+				/>
+				<button id="send-btn" class="send-btn" type="submit" disabled>Send</button>
+			</form>
 		</main>
 	</body>
 </html>
